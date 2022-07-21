@@ -453,7 +453,7 @@ button {
 .social-block .icons-social {
   display: flex;
   gap: 10px;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 
 .icons-social svg {
@@ -474,6 +474,7 @@ button {
 }
 
 .footer-social-title {
+  padding: 20px 0px 10px 0px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
