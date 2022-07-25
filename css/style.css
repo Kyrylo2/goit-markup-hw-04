@@ -35,6 +35,7 @@ img {
 }
 
 a {
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -243,7 +244,9 @@ button {
 }
 
 .futures-list-item div {
-  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
   background-color: var(--filter-background-color);
   margin-bottom: 30px;
@@ -344,7 +347,6 @@ button {
 .team .team-link:hover {
   background-color: var(--blue-color);
   color: var(--white-color);
-  border-radius: 100%;
 }
 
 .team .team-link {
@@ -511,11 +513,21 @@ button {
 
 .portfolio-card {
   width: 370px;
+}
+
+.portfolio-card-link {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
   cursor: pointer;
 }
 
-.portfolio-card:hover,
-.portfolio-card:focus {
+.portfolio-card-link img {
+  display: block;
+}
+
+.portfolio-card-link:hover,
+.portfolio-card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
